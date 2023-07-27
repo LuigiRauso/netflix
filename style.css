@@ -1,0 +1,201 @@
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 100;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff)
+      format("woff");
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 300;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff)
+      format("woff");
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 400;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff)
+      format("woff");
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 700;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff)
+      format("woff");
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 800;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff)
+      format("woff");
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 900;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff)
+      format("woff");
+}
+
+* {
+  color: white;
+  font-family: Netflix Sans;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+section {
+  display: flex;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  border-bottom: 8px solid #232323;
+  align-items: center;
+  justify-content: center;
+}
+
+section div.text {
+  text-align: left;
+  padding-left: 6px;
+  padding-right: 6px;
+  max-width: 793.66px;
+}
+
+section div.text h2 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+section div.text p {
+  margin-top: 16px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.media {
+  position: relative;
+}
+/* <-------- SECTION 1 --------> */
+.media.s1 img {
+  width: 793.656px;
+  position: relative;
+  z-index: 1;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.media.s1 video {
+  width: 582px;
+  position: absolute;
+  top: 124px;
+  left: 105px;
+}
+/* <-------- SECTION 2 --------> */
+.media.s2 img {
+  width: 793.656px;
+  position: relative;
+  z-index: 1;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.media.s2 video {
+  width: 491px;
+  position: absolute;
+  top: 64px;
+  left: 150px;
+}
+/* <-------- SECTION 3 --------> */
+.media.s3 img {
+  width: 793.656px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+/* <-------- SECTION 4 --------> */
+.media.s4 img {
+  width: 759.56px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.media.s4 .container {
+  display: flex;
+  background-color: black;
+  border: 2px solid rgba(128, 128, 128, 0.7);
+  border-radius: 0.75rem;
+  box-shadow: 0 0 2em 0 rgb(0, 0, 0);
+  padding: 8px 12px;
+  align-items: center;
+  position: absolute;
+  left: 24%;
+  bottom: 9%;
+}
+
+.media.s4 .container img {
+  width: 57.14px;
+  height: 80px;
+  padding-right: 12px;
+  padding-left: 0;
+}
+/* TEXT */
+.media.s4 .container .text {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.media.s4 .container .text .title {
+  font-family: Netflix Sans;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  width: 258.64px;
+  height: 20px;
+}
+.media.s4 .container .text .description {
+  color: #0071eb;
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  width: 258.64px;
+  height: 18px;
+}
+/* DOWNLOAD ICON */
+.media.s4 .container .download-ico {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.media.s4 .container .download-ico img {
+  margin: 0;
+  padding: 0;
+  width: 48px;
+  height: 48px;
+}
+/* ROW REVERSE */
+section:nth-child(even) {
+  flex-direction: row-reverse;
+}

@@ -1,9 +1,9 @@
-* {
-  letter-spacing: 0 !important;
+.f-container {
+  letter-spacing: 0;
   background-color: #000;
 }
 
-.footer {
+.options {
   min-width: 600px;
   max-width: calc(100% - 4rem);
   background-color: transparent;
@@ -15,7 +15,6 @@
   font-family: sans-serif;
 }
 
-
 .callcenter {
   margin-left: 40px;
   color: rgba(255, 255, 255, 0.7);
@@ -24,27 +23,23 @@
   margin-bottom: 20px;
 }
 
-.links {
+.links-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
 }
 
-
-
 .list-questions {
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 40px;
-  list-style: none
- 
+  list-style: none;
 }
 
-a {
+.links {
   color: rgba(255, 255, 255, 0.7);
 
   background-color: transparent;
 }
-
 
 .custom-select {
   display: flex;
@@ -53,11 +48,10 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: 4px;
   padding: 7px 15px;
-  background-color: #131313;}
+  background-color: #131313;
+}
 
-
-
- .icon {
+.world-icon {
   width: 16px;
   height: 16px;
   display: flex;
@@ -67,8 +61,7 @@ a {
   background-color: #131313;
 }
 
-
- .choselanguage{
+.choselanguage {
   font-size: 16px;
   background-color: #131313;
   padding: 0 10px;

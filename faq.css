@@ -1,0 +1,162 @@
+body {
+  background-color: black;
+  font-size: 24px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  margin-left: 30px;
+  margin-right: 30px;
+}
+/*
+.faq{
+  width:100%;
+  max-width: 1000px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ text-align: center;
+}*/ 
+
+.faq h2 {
+  font-size: 72px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.faq .collapsible-container {
+  width: 100%;
+}
+
+.faq .collapsible-container .collapsible-input {
+  display: none;
+}
+
+.faq .collapsible-container .collapsible-label {
+  background-color: rgb(45, 45, 45);
+  cursor: pointer;
+  padding: 30px;
+  border: 6px solid black;
+  text-align: left;
+  outline: none;
+  font-size: 26px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+.faq .collapsible-container .collapsible-label:hover,
+.faq .collapsible-container .collapsible-label:active {
+  background-color: #4d4b4b;
+}
+
+.collapsible-input:checked+.collapsible-label:after {
+  content: '×';
+}
+
+.collapsible-label:after {
+  content: '+';
+}
+
+.faq .collapsible-container .content {
+  padding: 0 30px;
+  display: none;
+  overflow: hidden;
+  background-color: rgb(45, 45, 45);
+  font-size: 26px;
+  font-weight: 500;
+  margin-top: -4px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.collapsible-input:checked+.collapsible-label+.content {
+  display: block;
+}
+
+.faq .email {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.faq .email>label {
+  margin: 30px 0;
+}
+
+.faq .email .email_and_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+}
+
+.faq .email .email_and_button input[type="email"] {
+  border: 1px solid rgb(134, 131, 131);
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: rgb(56, 55, 55);
+  color: rgb(255, 255, 255);
+  line-height: 80px;
+  width: 100%;
+  max-width: 550px;
+}
+
+.faq .email .email_and_button input[type="email"]:focus {
+  border: 3px solid white;
+
+}
+
+.faq .email .email_and_button input[type="email"]:valid,
+.faq .email .email_and_button input[type="email"]:focus {
+  border: 2px solid green;
+}
+
+.faq .email .email_and_button input[type="email"] :invalid {
+  border: 2px solid red;
+}
+
+.faq .email .email_and_button input[type="email"]:empty~.email_message_wrong {
+  display: none;
+}
+
+/*input[type="email"] :invalid .email_message_wrong{
+  display:block;
+
+}*/
+
+/*.email_message_wrong{
+  display:none;
+}*/
+
+.faq .email .email_and_button .email_button {
+  background-color: red;
+  color: rgb(255, 255, 255);
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 30px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid black;
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px;
+  height: 80px;
+}
+
+.faq .email .email_and_button .email_button:hover,
+.faq .email .email_and_button .email_button:active {
+  background-color: rgb(185, 21, 21);
+}
+
+
+.faq .email .email_and_button .email_svg1 {
+  display: flex;
+  justify-content: center;
+}

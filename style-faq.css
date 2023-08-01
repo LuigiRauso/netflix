@@ -6,6 +6,15 @@ body {
   margin-left: 30px;
   margin-right: 30px;
 }
+/*
+.faq{
+  width:100%;
+  max-width: 1000px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ text-align: center;
+}*/ 
 
 .faq h2 {
   font-size: 72px;

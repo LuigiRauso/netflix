@@ -41,6 +41,9 @@ body {
     padding-right: 6px;
   }
 /*card bottom */
+.card2 {
+  position: relative;
+}
   .card2 img {
     width: 759.56px;
     padding-left: 6px;

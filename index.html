@@ -7,111 +7,149 @@
 </head>
 
 <body>
-    <div class="faq">
-        <h2>Domande frequenti</h2>
+    <div class="faq-wrapper">
+        <div class="faq">
+            <h2>
+                Domande frequenti
+            </h2>
 
-        <div class="collapsible-container">
-            <input type="checkbox" class="collapsible-input" id="section1">
-            <label for="section1" class="collapsible-label">Cos'è Netflix?</label>
-            <div class="content">
-                <p>Netflix è un servizio di streaming che offre una varietà di serie TV, film, documentari pluripremiati
-                    e tanto altro su una vasta gamma di dispositivi connessi a Internet.</p>
-                <p> Guarda quello che vuoi, quando vuoi. Il tutto a una quota mensile ridotta.
-                    C'è sempre qualcosa di nuovo da scoprire: aggiungiamo nuovi film e serie TV ogni settimana!</p>
-            </div>
-        </div>
-        <div class="collapsible-container ">
-            <input type="checkbox" class="collapsible-input" id="section2">
-            <label for="section2" class="collapsible-label">Quanto costa Netflix?</label>
-            <div class="content">
-                <p>Guarda Netflix su smartphone, tablet, Smart TV, laptop o dispositivi per lo streaming,
-                    il tutto per un importo mensile fisso. Piani da 5,49 € a 17,99 € al mese.
-                    Nessun costo aggiuntivo, nessun contratto.</p>
-            </div>
-        </div>
-        <div class="collapsible-container">
-            <input type="checkbox" class="collapsible-input" id="section3">
-            <label for="section3" class="collapsible-label">Dove posso guardare Netflix?</label>
-            <div class="content">
-                <p>Guarda Netflix dove vuoi, quando vuoi. Accedi al tuo account per guardare subito Netflix
-                    dal tuo computer su netflix.com oppure da qualsiasi dispositivo connesso a Internet che supporta
-                    l'app Netflix, come smart TV, smartphone, tablet, lettori multimediali per streaming e console per
-                    videogiochi.</p>
-                <p>Con l'app per iOS, Android e Windows 10 puoi anche scaricare i tuoi programmi preferiti.
-                    Usa la funzionalità di download per guardare i contenuti mentre sei in viaggio e senza
-                    connessione a Internet. Porta Netflix sempre con te.</p>
-            </div>
-        </div>
-        <div class="collapsible-container">
-            <input type="checkbox" class="collapsible-input" id="section4">
-            <label for="section4" class="collapsible-label">Come posso disdire?</label>
-            <div class="content">
-                <p>Netflix è flessibile. Nessun contratto fastidioso e nessun impegno.
-                    Puoi facilmente disdire il tuo contratto online con due clic.
-                    Nessuna penale: attiva o disdici il tuo account in qualsiasi momento.</p>
-            </div>
-        </div>
-        <div class="collapsible-container">
-            <input type="checkbox" class="collapsible-input" id="section5">
-            <label for="section5" class="collapsible-label">Cosa posso guardare su Netflix?</label>
-            <div class="content">
-                <p>Netflix ha un nutrito catalogo di lungometraggi, documentari, serie TV, anime,
-                    originali Netflix pluripremiati e tanto altro.
-                    Guarda tutto quello che vuoi, in qualsiasi momento.</p>
-            </div>
-        </div>
-        <div class="collapsible-container">
-            <input type="checkbox" class="collapsible-input" id="section6">
-            <label for="section6" class="collapsible-label">Netflix è adatto ai bambini?</label>
-            <div class="content">
-                <p>L'area Netflix Bambini, già inclusa nell'abbonamento, offre ai genitori un maggiore
-                    controllo sui contenuti e ai più piccoli uno spazio dedicato dove guardare serie TV e
-                    film per tutta la famiglia.</p>
-                <p>I profili Bambini hanno un filtro famiglia con PIN che ti permette di limitare
-                    l'accesso ai contenuti in base alla fascia d'età e bloccare la visione di titoli specifici.</p>
-            </div>
-        </div>
-        <form class="email">
-            <label for="email">
-                <h3>Vuoi guardare Netflix? Inserisci l'indirizzo email per abbonarti o riattivare
-                    il tuo abbonamento.</h3>
-            </label>
-            <div class="email_and_button">
-                <input autocomplete="email" placeholder="Indirizzo email" minlength="5" maxlength="50" type="email"
-                    id="email" name="email" value="" required clsss="email_box">
-                <div data-uia="field-email+message" id="email_message_wrong" class="email_message_wrong">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
-                        class="email_svg_message" data-name="CircleX" role="img" aria-hidden="true">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 8C14.5 11.5899 11.5899 14.5 8 14.5C4.41015
-                    14.5 1.5 11.5899 1.5 8C1.5 4.41015 4.41015 1.5 8 1.5C11.5899 1.5 14.5 
-                    4.41015 14.5 8ZM16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 
-                    8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM4.46967 
-                    5.53033L6.93934 8L4.46967 10.4697L5.53033 11.5303L8 9.06066L10.4697
-                     11.5303L11.5303 10.4697L9.06066  8L11.5303 5.53033L10.4697 4.46967L8 
-                     6.93934L5.53033 4.46967L4.46967 5.53033Z" fill="currentColor">
-                        </path>
-                    </svg>Please enter a valid email address.
+            <div class="collapsible-container">
+                <input type="checkbox" class="collapsible-input" id="section1">
+                <label for="section1" class="collapsible-label">
+                    Cos'è Netflix?
+                </label>
+                <div class="content">
+                    <p>
+                        Netflix è un servizio di streaming che offre una varietà di serie TV, film, documentari
+                        pluripremiati
+                        e tanto altro su una vasta gamma di dispositivi connessi a Internet.
+                    </p>
+                    <p>
+                        Guarda quello che vuoi, quando vuoi. Il tutto a una quota mensile ridotta.
+                        C'è sempre qualcosa di nuovo da scoprire: aggiungiamo nuovi film e serie TV ogni settimana!
+                    </p>
                 </div>
-                <button role="button" class="email_button" type="submit" id="button">
-                    <span class="email_button_text">
-                        Inizia
-                    </span>
-                    <div aria-hidden="true" class="email_svg">
-                        <span dir="ltr" class="email_svg1">
-                            <svg font-weight="bold" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg" class="svg" data-name="ChevronRight"
-                                aria-hidden="true">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 
-                             12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072
-                             11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z" fill="currentColor">
-                                </path>
-                            </svg>
-                        </span>
-                    </div>
-                </button>
             </div>
-        </form>
-    </div>
+            <div class="collapsible-container ">
+                <input type="checkbox" class="collapsible-input" id="section2">
+                <label for="section2" class="collapsible-label">
+                    Quanto costa Netflix?
+                </label>
+                <div class="content">
+                    <p>
+                        Guarda Netflix su smartphone, tablet, Smart TV, laptop o dispositivi per lo streaming,
+                        il tutto per un importo mensile fisso. Piani da 5,49 € a 17,99 € al mese.
+                        Nessun costo aggiuntivo, nessun contratto.
+                    </p>
+                </div>
+            </div>
+            <div class="collapsible-container">
+                <input type="checkbox" class="collapsible-input" id="section3">
+                <label for="section3" class="collapsible-label">
+                    Dove posso guardare Netflix?
+                </label>
+                <div class="content">
+                    <p>
+                        Guarda Netflix dove vuoi, quando vuoi. Accedi al tuo account per guardare subito Netflix
+                        dal tuo computer su netflix.com oppure da qualsiasi dispositivo connesso a Internet che supporta
+                        l'app Netflix, come smart TV, smartphone, tablet, lettori multimediali per streaming e console
+                        per
+                        videogiochi.
+                    </p>
+                    <p>
+                        Con l'app per iOS, Android e Windows 10 puoi anche scaricare i tuoi programmi preferiti.
+                        Usa la funzionalità di download per guardare i contenuti mentre sei in viaggio e senza
+                        connessione a Internet. Porta Netflix sempre con te.
+                    </p>
+                </div>
+            </div>
+            <div class="collapsible-container">
+                <input type="checkbox" class="collapsible-input" id="section4">
+                <label for="section4" class="collapsible-label">
+                    Come posso disdire?
+                </label>
+                <div class="content">
+                    <p>
+                        Netflix è flessibile. Nessun contratto fastidioso e nessun impegno.
+                        Puoi facilmente disdire il tuo contratto online con due clic.
+                        Nessuna penale: attiva o disdici il tuo account in qualsiasi momento.
+                    </p>
+                </div>
+            </div>
+            <div class="collapsible-container">
+                <input type="checkbox" class="collapsible-input" id="section5">
+                <label for="section5" class="collapsible-label">
+                    Cosa posso guardare su Netflix?
+                </label>
+                <div class="content">
+                    <p>
+                        Netflix ha un nutrito catalogo di lungometraggi, documentari, serie TV, anime,
+                        originali Netflix pluripremiati e tanto altro.
+                        Guarda tutto quello che vuoi, in qualsiasi momento.
+                    </p>
+                </div>
+            </div>
+            <div class="collapsible-container">
+                <input type="checkbox" class="collapsible-input" id="section6">
+                <label for="section6" class="collapsible-label">
+                    Netflix è adatto ai bambini?
+                </label>
+                <div class="content">
+                    <p>
+                        L'area Netflix Bambini, già inclusa nell'abbonamento, offre ai genitori un maggiore
+                        controllo sui contenuti e ai più piccoli uno spazio dedicato dove guardare serie TV e
+                        film per tutta la famiglia.
+                    </p>
+                    <p>
+                        I profili Bambini hanno un filtro famiglia con PIN che ti permette di limitare
+                        l'accesso ai contenuti in base alla fascia d'età e bloccare la visione di titoli specifici.
+                    </p>
+                </div>
+            </div>
+            <form class="email">
+                <label for="email">
+                    <h3>
+                        Vuoi guardare Netflix? Inserisci l'indirizzo email per abbonarti o riattivare
+                        il tuo abbonamento.
+                    </h3>
+                </label>
+                <div class="email_and_button">
+                    <input autocomplete="email" placeholder="Indirizzo email" minlength="5" maxlength="50" type="email"
+                        id="email" name="email" value="" required clsss="email_box">
+                    <div data-uia="field-email+message" id="email_message_wrong" class="email_message_wrong">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="email_svg_message" data-name="CircleX" role="img" aria-hidden="true">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 8C14.5 11.5899 11.5899 14.5 8 14.5C4.41015
+                                14.5 1.5 11.5899 1.5 8C1.5 4.41015 4.41015 1.5 8 1.5C11.5899 1.5 14.5 
+                                4.41015 14.5 8ZM16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 
+                                8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM4.46967 
+                                5.53033L6.93934 8L4.46967 10.4697L5.53033 11.5303L8 9.06066L10.4697
+                                11.5303L11.5303 10.4697L9.06066  8L11.5303 5.53033L10.4697 4.46967L8 
+                                6.93934L5.53033 4.46967L4.46967 5.53033Z" fill="currentColor">
+                            </path>
+                        </svg>
+                        Please enter a valid email address.
+                    </div>
+                    <button role="button" class="email_button" type="submit" id="button">
+                        <span class="email_button_text">
+                            Inizia
+                        </span>
+                        <div aria-hidden="true" class="email_svg">
+                            <span dir="ltr" class="email_svg1">
+                                <svg font-weight="bold" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="svg" data-name="ChevronRight"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 
+                                        12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072
+                                        11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z" fill="currentColor">
+                                    </path>
+                                </svg>
+                            </span>
+                        </div>
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 

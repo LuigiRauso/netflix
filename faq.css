@@ -1,36 +1,42 @@
-body {
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.faq-wrapper {
   background-color: black;
   font-size: 24px;
   font-weight: 400;
   color: rgb(255, 255, 255);
-  margin-left: 30px;
-  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-/*
-.faq{
-  width:100%;
-  max-width: 1000px;
- display: flex;
- flex-direction: column;
- justify-content: center;
- text-align: center;
-}*/ 
 
-.faq h2 {
+.faq-wrapper .faq {
+  width: 100%;
+  max-width: calc(83% - 6rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-wrapper .faq h2 {
   font-size: 72px;
   font-weight: 900;
   text-align: center;
 }
 
-.faq .collapsible-container {
+.faq-wrapper .faq .collapsible-container {
   width: 100%;
 }
 
-.faq .collapsible-container .collapsible-input {
+.faq-wrapper .faq .collapsible-container .collapsible-input {
   display: none;
 }
 
-.faq .collapsible-container .collapsible-label {
+.faq-wrapper .faq .collapsible-container .collapsible-label {
   background-color: rgb(45, 45, 45);
   cursor: pointer;
   padding: 30px;
@@ -43,8 +49,8 @@ body {
   font-weight: 500;
 }
 
-.faq .collapsible-container .collapsible-label:hover,
-.faq .collapsible-container .collapsible-label:active {
+.faq-wrapper .faq .collapsible-container .collapsible-label:hover,
+.faq-wrapper .faq .collapsible-container .collapsible-label:active {
   background-color: #4d4b4b;
 }
 
@@ -56,7 +62,7 @@ body {
   content: '+';
 }
 
-.faq .collapsible-container .content {
+.faq-wrapper .faq .collapsible-container .content {
   padding: 0 30px;
   display: none;
   overflow: hidden;
@@ -72,7 +78,7 @@ body {
   display: block;
 }
 
-.faq .email {
+.faq-wrapper .faq .email {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -81,11 +87,11 @@ body {
   margin-bottom: 40px;
 }
 
-.faq .email>label {
+.faq-wrapper .faq .email>label {
   margin: 30px 0;
 }
 
-.faq .email .email_and_button {
+.faq-wrapper .faq .email .email_and_button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,7 +99,7 @@ body {
   width: 100%;
 }
 
-.faq .email .email_and_button input[type="email"] {
+.faq-wrapper .faq .email .email_and_button input[type="email"] {
   border: 1px solid rgb(134, 131, 131);
   border-radius: 8px;
   font-size: 18px;
@@ -105,34 +111,34 @@ body {
   max-width: 550px;
 }
 
-.faq .email .email_and_button input[type="email"]:focus {
+.faq-wrapper .faq .email .email_and_button input[type="email"]:focus {
   border: 3px solid white;
 
 }
 
-.faq .email .email_and_button input[type="email"]:valid,
-.faq .email .email_and_button input[type="email"]:focus {
+.faq-wrapper .faq .email .email_and_button input[type="email"]:valid,
+.faq-wrapper .faq .email .email_and_button input[type="email"]:focus {
   border: 2px solid green;
 }
 
-.faq .email .email_and_button input[type="email"] :invalid {
+.faq-wrapper .faq .email .email_and_button input[type="email"] :invalid {
   border: 2px solid red;
 }
 
-.faq .email .email_and_button input[type="email"]:empty~.email_message_wrong {
+.faq-wrapper .faq .email .email_and_button input[type="email"]:empty~.email_message_wrong {
   display: none;
 }
 
 /*input[type="email"] :invalid .email_message_wrong{
-  display:block;
-
-}*/
+    display:block;
+  
+  }*/
 
 /*.email_message_wrong{
-  display:none;
-}*/
+    display:none;
+  }*/
 
-.faq .email .email_and_button .email_button {
+.faq-wrapper .faq .email .email_and_button .email_button {
   background-color: red;
   color: rgb(255, 255, 255);
   border-radius: 6px;
@@ -150,13 +156,13 @@ body {
   height: 80px;
 }
 
-.faq .email .email_and_button .email_button:hover,
-.faq .email .email_and_button .email_button:active {
+.faq-wrapper .faq .email .email_and_button .email_button:hover,
+.faq-wrapper .faq .email .email_and_button .email_button:active {
   background-color: rgb(185, 21, 21);
 }
 
 
-.faq .email .email_and_button .email_svg1 {
+.faq-wrapper .faq .email .email_and_button .email_svg1 {
   display: flex;
   justify-content: center;
 }

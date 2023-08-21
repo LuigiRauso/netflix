@@ -64,17 +64,19 @@
       format("woff");
 }
 
-* {
+.cards-wrapper section h2,
+.cards-wrapper section p {
   color: white;
   font-family: Netflix Sans;
 }
 
-body {
+.cards-wrapper {
   background-color: black;
   margin: 0;
   padding: 0;
 }
-section {
+
+.cards-wrapper section {
   display: flex;
   padding-top: 72px;
   padding-bottom: 72px;
@@ -83,29 +85,30 @@ section {
   justify-content: center;
 }
 
-section div.text {
+.cards-wrapper section div.text {
   text-align: left;
   padding-left: 6px;
   padding-right: 6px;
   max-width: 793.66px;
 }
 
-section div.text h2 {
+.cards-wrapper section div.text h2 {
   font-size: 3rem;
   font-weight: 900;
 }
 
-section div.text p {
+.cards-wrapper section div.text p {
   margin-top: 16px;
   font-size: 1.5rem;
   font-weight: 400;
 }
 
-.media {
+.cards-wrapper section .media {
   position: relative;
 }
+
 /* <-------- SECTION 1 --------> */
-.media.s1 img {
+.cards-wrapper section .media.s1 img {
   width: 793.656px;
   position: relative;
   z-index: 1;
@@ -113,14 +116,14 @@ section div.text p {
   padding-right: 6px;
 }
 
-.media.s1 video {
+.cards-wrapper section .media.s1 video {
   width: 582px;
   position: absolute;
   top: 124px;
   left: 105px;
 }
 /* <-------- SECTION 2 --------> */
-.media.s2 img {
+.cards-wrapper section .media.s2 img {
   width: 793.656px;
   position: relative;
   z-index: 1;
@@ -128,25 +131,28 @@ section div.text p {
   padding-right: 6px;
 }
 
-.media.s2 video {
+.cards-wrapper section .media.s2 video {
   width: 491px;
   position: absolute;
   top: 64px;
   left: 150px;
 }
+
 /* <-------- SECTION 3 --------> */
-.media.s3 img {
+.cards-wrapper section .media.s3 img {
   width: 793.656px;
   padding-left: 6px;
   padding-right: 6px;
 }
+
 /* <-------- SECTION 4 --------> */
-.media.s4 img {
+.cards-wrapper section .media.s4 img {
   width: 759.56px;
   padding-left: 6px;
   padding-right: 6px;
 }
-.media.s4 .container {
+
+.cards-wrapper section .media.s4 .container {
   display: flex;
   background-color: black;
   border: 2px solid rgba(128, 128, 128, 0.7);
@@ -159,19 +165,21 @@ section div.text p {
   bottom: 9%;
 }
 
-.media.s4 .container img {
+.cards-wrapper section .media.s4 .container img {
   width: 57.14px;
   height: 80px;
   padding-right: 12px;
   padding-left: 0;
 }
+
 /* TEXT */
-.media.s4 .container .text {
+.cards-wrapper section .media.s4 .container .text {
   text-align: left;
   margin: 0;
   padding: 0;
 }
-.media.s4 .container .text .title {
+
+.cards-wrapper section .media.s4 .container .text .title {
   font-family: Netflix Sans;
   font-size: 1rem;
   font-weight: 700;
@@ -180,7 +188,8 @@ section div.text p {
   width: 258.64px;
   height: 20px;
 }
-.media.s4 .container .text .description {
+
+.cards-wrapper section .media.s4 .container .text .description {
   color: #0071eb;
   font-size: 0.875rem;
   font-weight: 400;
@@ -189,19 +198,22 @@ section div.text p {
   width: 258.64px;
   height: 18px;
 }
+
 /* DOWNLOAD ICON */
-.media.s4 .container .download-ico {
+.cards-wrapper section .media.s4 .container .download-ico {
   overflow: hidden;
   margin: 0;
   padding: 0;
 }
-.media.s4 .container .download-ico img {
+
+.cards-wrapper section .media.s4 .container .download-ico img {
   margin: 0;
   padding: 0;
   width: 48px;
   height: 48px;
 }
+
 /* ROW REVERSE */
-section:nth-child(even) {
+.cards-wrapper section:nth-child(even) {
   flex-direction: row-reverse;
 }

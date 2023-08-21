@@ -1,109 +1,108 @@
-
 * {
-    color: white;
-    font-family: Netflix Sans;
-  }
+  color: white;
+  font-family: Netflix Sans;
+}
 body {
-    background-color: black;
-    margin:0;
-    padding: 0;
- }
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
 
- section {
-    display: flex;
-    padding-top: 72px;
-    padding-bottom: 72px;
-    border-bottom: 8px solid #232323;
-    align-items: center;
-    justify-content: center;
-  }
+section {
+  display: flex;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  border-bottom: 8px solid #232323;
+  align-items: center;
+  justify-content: center;
+}
 
-  section div.testo {
-    text-align: left;
-    padding-left: 6px;
-    padding-right: 6px;
-    max-width: 793.66px;
-  }
-  section div.testo h2 {
-    font-size: 3rem;
-    font-weight: 900;
-  }
+section div.testo {
+  text-align: left;
+  padding-left: 6px;
+  padding-right: 6px;
+  max-width: 793.66px;
+}
+section div.testo h2 {
+  font-size: 3rem;
+  font-weight: 900;
+}
 
-  section div.testo p {
-    margin-top: 16px;
-    font-size: 1.5rem;
-    font-weight: 400;
-  }
+section div.testo p {
+  margin-top: 16px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
 
-  .kids img {
-    width: 793.656px;
-    padding-left: 6px;
-    padding-right: 6px;
-  }
+.kids img {
+  width: 793.656px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
 /*card bottom */
 .card2 {
   position: relative;
 }
-  .card2 img {
-    width: 759.56px;
-    padding-left: 6px;
-    padding-right: 6px;
-  }
-  .card2 .card-bottom {
-    display: flex;
-    background-color: black;
-    border: 2px solid rgba(128, 128, 128, 0.7);
-    border-radius: 0.75rem;
-    box-shadow: 0 0 2em 0 rgb(0, 0, 0);
-    padding: 8px 12px;
-    align-items: center;
-    position: absolute;
-    left: 24%;
-    bottom: 9%;
-  }
-  
-  .card2 .card-bottom img {
-    width: 57.14px;
-    height: 80px;
-    padding-right: 12px;
-    padding-left: 0;
-  }
+.card2 img {
+  width: 759.56px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.card2 .card-bottom {
+  display: flex;
+  background-color: black;
+  border: 2px solid rgba(128, 128, 128, 0.7);
+  border-radius: 0.75rem;
+  box-shadow: 0 0 2em 0 rgb(0, 0, 0);
+  padding: 8px 12px;
+  align-items: center;
+  position: absolute;
+  left: 24%;
+  bottom: 9%;
+}
 
-  .card2 .card-bottom .testo {
-    text-align: left;
-    margin: 0;
-    padding: 0;
-  }
-  .card2 .card-bottom .testo .title {
-    font-family: Netflix Sans;
-    font-size: 1rem;
-    font-weight: 700;
-    margin: 0;
-    padding: 0;
-    width: 258.64px;
-    height: 20px;
-  }
-  .card2 .card-bottom .testo .middle {
-    color: #0071eb;
-    font-size: 0.875rem;
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
-    width: 258.64px;
-    height: 18px;
-  }
-  
-  .card2 .card-bottom .gif {
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-  }
-  .card2 .card-bottom .gif img {
-    margin: 0;
-    padding: 0;
-    width: 48px;
-    height: 48px;
-  }
-  section:nth-child(even) {
-    flex-direction: row-reverse;
-  }
+.card2 .card-bottom img {
+  width: 57.14px;
+  height: 80px;
+  padding-right: 12px;
+  padding-left: 0;
+}
+
+.card2 .card-bottom .testo {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.card2 .card-bottom .testo .title {
+  font-family: Netflix Sans;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  width: 258.64px;
+  height: 20px;
+}
+.card2 .card-bottom .testo .middle {
+  color: #0071eb;
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  width: 258.64px;
+  height: 18px;
+}
+
+.card2 .card-bottom .gif {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.card2 .card-bottom .gif img {
+  margin: 0;
+  padding: 0;
+  width: 48px;
+  height: 48px;
+}
+section:nth-child(even) {
+  flex-direction: row-reverse;
+}

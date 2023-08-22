@@ -14,6 +14,7 @@
   border-bottom: 8px solid #232323;
   padding-top: 72px;
   padding-bottom: 72px;
+
 }
 
 .faq-wrapper .faq {
@@ -23,6 +24,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left: 19vw;
+  margin-right: 19vw;
 }
 
 .faq-wrapper .faq h2 {

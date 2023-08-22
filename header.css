@@ -1,117 +1,234 @@
 * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   letter-spacing: 0 !important;
 }
-body {
-  background-color: black;
-  margin: 0;
+
+.header-container {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0.358) 60%,
+      rgb(0, 0, 0) 100%
+    ),
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/fc164b4b-f085-44ee-bb7f-ec7df8539eff/b404b8d9-9dea-4aef-b29a-da28817af0db/IT-it-20230814-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 130%;
+  height: 54.7vh;
+  width: 100vw;
+}
+
+.header-container .navbar {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 19vw;
+  height: 4vw;
+}
+
+.header-container .navbar .logo-left a img {
+  width: 10rem;
+}
+
+/* <------- MENU RIGHT -------> */
+.header-container .navbar .menu-right {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  font-family:
-    Netflix Sans,
-    Helvetica Neue,
-    Segoe UI,
-    Roboto,
-    Ubuntu,
-    sans-serif;
+}
+
+.header-container .navbar .menu-right .login a {
+  display: inline-flex;
+  background-color: #e50914;
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 17px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.header-container .navbar .menu-right .login a:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  background: rgb(193, 17, 25);
+}
+
+.header-container .navbar .menu-right .language-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 4px 17px;
+
+  margin-right: 25px;
+}
+
+.header-container
+  .navbar
+  .menu-right
+  .language-container
+  .language-selector
+  select {
+  font-size: 1.1rem;
+}
+
+.header-container .navbar .menu-right .language-container .world-icon svg {
   color: white;
-  font-weight: 700;
+  display: block;
 }
 
-.imgbig {
-  padding-top: 136px;
-  padding-bottom: 48px;
-  filter: opacity(30%);
-  min-height: 32rem;
-  padding: 8.5rem 0 3rem;
-}
-
-select,
-button {
-  position: absolute;
-  top: 10px;
-}
-
-select {
-  right: 25%;
-  margin-top: 15px;
-  margin-right: 20px;
-  height: 30px;
-  width: 100px;
-  text-align: center;
+.header-container
+  .navbar
+  .menu-right
+  .language-container
+  .language-selector
+  select {
+  border-style: none;
   background-color: transparent;
   color: white;
-  border: 1px solid grey;
-  border-radius: 3px;
 }
 
-.accedi {
-  right: 20%;
-  margin-top: 15px;
-  height: 30px;
-  width: 90px;
+/* <------- HERO CONTAINER -------> */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  z-index: 10;
+  height: 86%;
+}
+
+.hero-container .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  /* margin-bottom: 49px; */
+}
+.hero-container .description {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  background-color: red;
-  color: white;
-  border-radius: 3px;
-  border: 0;
+  gap: 1vw;
 }
 
-.logo {
-  position: absolute;
-  top: 10px;
-  height: 40px;
-  width: auto;
-  left: 20%;
-  margin-top: 15px;
-}
-
-.text {
-  position: absolute;
-  text-align: center;
-  margin-bottom: 15%;
+.hero-container .description h1 {
+  font-size: 48px;
+  font-weight: 900;
   color: white;
 }
 
-.email {
-  position: absolute;
+.hero-container .description p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: white;
 }
 
-.textinput {
-  background-color: black;
-  opacity: 0.5;
+.hero-container .description p:last-of-type {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: white;
+}
+
+.hero-container .form-header {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.hero-container .form-header .sign-up input {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 18px;
+  padding-right: 320px;
+  border-radius: 5px;
   border: 1px solid grey;
-  border-radius: 3px;
-  width: 400px;
-  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.372);
+}
+.hero-container .form-header .sign-up input::placeholder {
+  color: rgba(255, 255, 255, 0.722);
+  font-size: 1.1rem;
 }
 
-.textbutton {
-  width: 100px;
-  background-color: red;
+.hero-container .form-header .sign-up button {
+  border: 0px;
+  border-radius: 5px;
+  vertical-align: middle;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.85rem 1.5rem;
+  background-color: #e50914;
+  color: rgb(255, 255, 255);
+}
+
+.hero-container .form-header .sign-up button:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  background: rgb(193, 17, 25);
+}
+
+/* BANNER */
+.banner-container {
+  left: 50%;
+  transform: translateX(-50%);
   color: white;
-  border: 0;
-  border-radius: 3px;
-  padding: 10px;
-  margin-left: 10px;
-}
-
-#banner {
+  display: flex;
+  padding: 26px;
+  justify-content: center;
+  align-items: center;
+  top: 48.5vh;
   position: absolute;
-  display: block;
-  width: 627px;
-  height: auto;
-  margin-top: 30%;
-  padding: 30px;
-  background-color: blueviolet;
-  background-image: radial-gradient(
-    120.35% 220% at 49.86% -6.29%,
-    rgb(229, 9, 20) 0%,
-    rgb(14, 27, 79) 46.15%,
-    rgb(13, 17, 33) 100%
+  background: radial-gradient(
+    51.39% 511.66% at 47.68% -217.91%,
+    #ff9900 0%,
+    #e50914 17.27%,
+    #0e1b4f 79.44%,
+    #000413 100%
   );
-  box-shadow: rgba(0, 0, 0, 0.5);
-  width: 600px;
-  border-radius: 8px;
+  box-shadow: 0px -8px 25px rgba(0, 0, 0, 0);
+  border-radius: 4px;
+
+  z-index: 30;
+
+  width: 94vw;
+}
+
+.banner-container .banner {
+  display: flex;
+}
+
+.banner-container .banner .description {
+  text-align: left;
+  padding-left: 52px;
+}
+
+.banner-container .banner .description h3 {
+  color: white;
+  font-size: 1.3rem;
+  line-height: 30px;
+}
+
+.banner-container .banner .description p {
+  font-size: 1.1rem;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  line-height: 24px;
+}
+
+.banner-container .banner .description a {
+  font-weight: bolder;
+  color: #4c72e2;
+  font-size: 1.1rem;
 }

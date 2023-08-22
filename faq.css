@@ -11,6 +11,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 8px solid #232323;
+  padding-top: 72px;
+  padding-bottom: 72px;
 }
 
 .faq-wrapper .faq {

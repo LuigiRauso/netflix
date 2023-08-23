@@ -1,14 +1,8 @@
-* {
-  color: white;
-  font-family: Netflix Sans;
-}
-body {
+.cards-wrapper2 {
   background-color: black;
-  margin: 0;
-  padding: 0;
 }
 
-section {
+.cards-wrapper2 section {
   display: flex;
   padding-top: 72px;
   padding-bottom: 72px;
@@ -17,18 +11,18 @@ section {
   justify-content: center;
 }
 
-section div.testo {
+.cards-wrapper2 section div.testo {
   text-align: left;
   padding-left: 6px;
   padding-right: 6px;
   max-width: 793.66px;
 }
-section div.testo h2 {
+.cards-wrapper2 section div.testo h2 {
   font-size: 3rem;
   font-weight: 900;
 }
 
-section div.testo p {
+.cards-wrapper2 section div.testo p {
   margin-top: 16px;
   font-size: 1.5rem;
   font-weight: 400;
@@ -39,6 +33,7 @@ section div.testo p {
   padding-left: 6px;
   padding-right: 6px;
 }
+
 /*card bottom */
 .card2 {
   position: relative;
@@ -73,6 +68,11 @@ section div.testo p {
   margin: 0;
   padding: 0;
 }
+.testo h2,
+.testo p {
+  color: white;
+}
+
 .card2 .card-bottom .testo .title {
   font-family: Netflix Sans;
   font-size: 1rem;
@@ -82,6 +82,7 @@ section div.testo p {
   width: 258.64px;
   height: 20px;
 }
+
 .card2 .card-bottom .testo .middle {
   color: #0071eb;
   font-size: 0.875rem;
@@ -103,6 +104,7 @@ section div.testo p {
   width: 48px;
   height: 48px;
 }
-section:nth-child(even) {
+
+.cards-wrapper2 section:nth-child(even) {
   flex-direction: row-reverse;
 }

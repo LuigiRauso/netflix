@@ -1,18 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Netflix Italia - Guarda serie TV online, Guarda film online</title>
-    <!-- Angelo - Head -->
-    <link rel="stylesheet" href="header.css" />
-    <link rel="icon" href="img-header/favicon.png" type="image\png" />
-    <!-- Luigi - Head -->
-    <link rel="stylesheet" href="luigi-cards.css" />
+    <!-- CSS RESET -->
+    <link rel="stylesheet" href="reset.css" />
     <link
       href="https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2"
       rel="stylesheet"
     />
+    <!-- Group Work - Head -->
+    <link rel="stylesheet" href="header.css" />
+    <link rel="icon" href="img-header/favicon.png" type="image\png" />
+    <!-- Luigi - Head -->
+    <link rel="stylesheet" href="luigi-cards.css" />
     <!-- Miriana - Head -->
     <link rel="stylesheet" href="miriana-cards.css" />
     <!-- Monica - Head -->
@@ -78,12 +80,80 @@
           <div class="form-header">
             <div class="sign-up">
               <input
-                type="text"
-                name="email"
-                id="email"
+                autocomplete="email"
                 placeholder="Indirizzo email"
+                minlength="5"
+                maxlength="50"
+                type="email"
+                id="email"
+                name="email"
+                value=""
+                required
+                clsss="email_box"
               />
-              <button type="submit">Inizia ></button>
+              <div
+                data-uia="field-email+message"
+                id="email_message_wrong"
+                class="email_message_wrong"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="email_svg_message"
+                  data-name="CircleX"
+                  role="img"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M14.5 8C14.5 11.5899 11.5899 14.5 8 14.5C4.41015
+                                14.5 1.5 11.5899 1.5 8C1.5 4.41015 4.41015 1.5 8 1.5C11.5899 1.5 14.5 
+                                4.41015 14.5 8ZM16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 
+                                8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM4.46967 
+                                5.53033L6.93934 8L4.46967 10.4697L5.53033 11.5303L8 9.06066L10.4697
+                                11.5303L11.5303 10.4697L9.06066  8L11.5303 5.53033L10.4697 4.46967L8 
+                                6.93934L5.53033 4.46967L4.46967 5.53033Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+                Please enter a valid email address.
+              </div>
+              <button
+                role="button"
+                class="email_button"
+                type="submit"
+                id="button"
+              >
+                <span class="email_button_text"> Inizia </span>
+                <div aria-hidden="true" class="email_svg">
+                  <span dir="ltr" class="email_svg1">
+                    <svg
+                      font-weight="bold"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="svg"
+                      data-name="ChevronRight"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 
+                                        12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072
+                                        11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+              </button>
             </div>
           </div>
         </div>
@@ -676,45 +746,47 @@
       </section>
     </div>
     <!-- Miriana - Cards (OK)-->
-    <section>
-      <div class="testo">
-        <h2>Crea profili per i bambini</h2>
-        <p>
-          I bambini scoprono nuove avventure in compagnia dei loro personaggi
-          preferiti in uno spazio tutto loro già incluso nel tuo abbonamento.
-        </p>
-      </div>
-      <div class="kids">
-        <img
-          src="https://occ-0-728-2581.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABQsAP_o9hR1G6Iof9Ckx0xjVOkOYPfWTiMN69dvL5yzSCKoCYylyrG4QSXvHmcT9To8tTTtNGP6_97vR8Y5utqllhB17BwfvB_lE.png"
-        />
-      </div>
-    </section>
-    <section>
-      <div class="testo">
-        <h2>Scarica le tue serie da guardare offline</h2>
-        <p>Disponibili solo nei piani senza pubblicità.</p>
-      </div>
-      <div class="card2">
-        <img
-          src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
-        />
-        <div class="card-bottom">
+    <div class="cards-wrapper2">
+      <section>
+        <div class="testo">
+          <h2>Crea profili per i bambini</h2>
+          <p>
+            I bambini scoprono nuove avventure in compagnia dei loro personaggi
+            preferiti in uno spazio tutto loro già incluso nel tuo abbonamento.
+          </p>
+        </div>
+        <div class="kids">
           <img
-            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png"
+            src="https://occ-0-728-2581.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABQsAP_o9hR1G6Iof9Ckx0xjVOkOYPfWTiMN69dvL5yzSCKoCYylyrG4QSXvHmcT9To8tTTtNGP6_97vR8Y5utqllhB17BwfvB_lE.png"
           />
-          <div class="testo">
-            <p class="title">Stranger Things</p>
-            <p class="middle">Download in corso...</p>
-          </div>
-          <div class="gif">
+        </div>
+      </section>
+      <section>
+        <div class="testo">
+          <h2>Scarica le tue serie da guardare offline</h2>
+          <p>Disponibili solo nei piani senza pubblicità.</p>
+        </div>
+        <div class="card2">
+          <img
+            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
+          />
+          <div class="card-bottom">
             <img
-              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif"
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png"
             />
+            <div class="testo">
+              <p class="title">Stranger Things</p>
+              <p class="middle">Download in corso...</p>
+            </div>
+            <div class="gif">
+              <img
+                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif"
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
     <!-- Monica - Faq (OK)-->
     <div class="faq-wrapper">
       <div class="faq">

@@ -1,6 +1,10 @@
 .f-container {
   letter-spacing: 0;
   background-color: #000;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-left: 12vw;
+  margin-right: 12vw;
 }
 
 .options {
@@ -12,11 +16,10 @@
   margin-left: 185px;
   font-style: normal;
   font-weight: 400;
-  font-family: sans-serif;
 }
 
 .callcenter {
-  margin-left: 40px;
+  /* margin-left: 40px; */
   color: rgba(255, 255, 255, 0.7);
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -25,8 +28,8 @@
 
 .links-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
 }
 
 .list-questions {
@@ -42,13 +45,21 @@
 }
 
 .custom-select {
-  display: flex;
-  width: 100px;
+  appearance: none;
+  display: inline-flex;
+  min-width: auto;
+  width: auto;
+  font-size: 1rem;
+  font-weight: 400;
   align-items: center;
   border: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: 4px;
-  padding: 7px 15px;
   background-color: #131313;
+  color: inherit;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
 }
 
 .world-icon {
@@ -62,9 +73,12 @@
 }
 
 .choselanguage {
+  line-height: 1.25rem;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   font-size: 16px;
   background-color: #131313;
-  padding: 0 10px;
   color: rgba(255, 255, 255, 0.764);
   border: none;
   word-spacing: normal;
@@ -72,12 +86,19 @@
   width: auto;
 }
 
-.margin {
-  margin-left: 40px;
-}
-
 .language {
   display: block;
   background-color: white;
   text-align: right;
+}
+
+.netflix-logo {
+  font-size: 1.2rem;
+  color: #ffffffb3;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin: 0;
+  padding: 0;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }

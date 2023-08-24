@@ -17,7 +17,10 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 4vw;
+
+  height: 5.375rem;
+  max-width: calc(66.66666666666666% - 6rem);
+  margin: auto;
 }
 
 .header-container .navbar .logo-left a img {

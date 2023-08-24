@@ -3,6 +3,9 @@
   background-color: #000;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  max-width: calc(66.66666666666666% - 6rem);
+  margin: auto;
 }
 
 .options {

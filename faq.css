@@ -13,7 +13,8 @@
 
 .faq-wrapper .faq {
   width: 100%;
-  max-width: calc(83% - 6rem);
+  max-width: calc(66.66666666666666% - 6rem);
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -1,5 +1,7 @@
 .cards-wrapper2 {
   background-color: black;
+  max-width: calc(66.66666666666666% - 6rem);
+  margin: auto;
 }
 
 .cards-wrapper2 section {

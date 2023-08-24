@@ -3,8 +3,6 @@
   background-color: #000;
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-left: 12vw;
-  margin-right: 12vw;
 }
 
 .options {
@@ -13,7 +11,7 @@
   background-color: transparent;
   color: rgba(255, 255, 255, 0.7);
   padding: 1.25rem 0px;
-  margin-left: 185px;
+  /* margin-left: 185px; */
   font-style: normal;
   font-weight: 400;
 }

@@ -6,9 +6,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 8px solid #232323;
-  padding-top: 72px;
-  padding-bottom: 72px;
+  /* border-bottom: 8px solid #232323; */
+  padding: 4.5rem 0;
 }
 
 .faq-wrapper .faq {
@@ -39,7 +38,7 @@
 .faq-wrapper .faq .collapsible-container .collapsible-label {
   background-color: rgb(45, 45, 45);
   cursor: pointer;
-  padding: 30px;
+  padding: 24px;
   border: 6px solid black;
   text-align: left;
   outline: none;
@@ -52,14 +51,30 @@
 .faq-wrapper .faq .collapsible-container .collapsible-label:hover,
 .faq-wrapper .faq .collapsible-container .collapsible-label:active {
   background-color: #4d4b4b;
+  transition-duration: 300ms;
 }
 
 .collapsible-input:checked + .collapsible-label:after {
-  content: "×";
+  content: "";
+  display: block;
+  width: 2.25rem;
+  height: 2.25rem;
+  background-image: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 11V2H13V11H22V13H13V22H11V13H2V11H11Z" fill="white"></path></svg>');
+  background-size: contain;
+  transform: rotate(-45deg);
 }
 
 .collapsible-label:after {
-  content: "+";
+  content: "";
+  display: block;
+  width: 2.25rem;
+  height: 2.25rem;
+  background-image: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 11V2H13V11H22V13H13V22H11V13H2V11H11Z" fill="white"></path></svg>');
+  background-size: contain;
+}
+
+.faq-wrapper .faq .collapsible-container .content > p {
+  font-size: 1.5rem;
 }
 
 .faq-wrapper .faq .collapsible-container .content {
@@ -86,7 +101,7 @@
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 
 .faq-wrapper .faq .email > label {

@@ -1,8 +1,7 @@
 .f-container {
   letter-spacing: 0;
   background-color: #000;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 3.75rem 0;
 
   max-width: calc(66.66666666666666% - 6rem);
   margin: auto;
@@ -54,16 +53,29 @@
   font-size: 1rem;
   font-weight: 400;
   align-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(118, 118, 118);
   border-radius: 4px;
   background-color: #131313;
   color: inherit;
   justify-content: center;
-  gap: 10px;
-  padding: 10px 20px;
+  gap: 8px;
+  padding: 5px 10px;
   margin-bottom: 20px;
 }
 
+.custom-select .arrow {
+  display: flex;
+}
+
+.custom-select:focus-within {
+  outline: 2px solid rgb(255, 255, 255);
+}
+
+.custom-select select {
+  color: rgb(255, 255, 255);
+  outline: none;
+  font-size: 1rem;
+}
 .world-icon {
   width: 16px;
   height: 16px;

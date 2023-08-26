@@ -1,15 +1,37 @@
-.header-container {
+.header-container::before {
+  /* fix opacity */
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
   background-image: linear-gradient(
       to top,
       rgba(0, 0, 0, 0.8) 0,
-      rgba(0, 0, 0, 0.358) 60%,
-      rgb(0, 0, 0) 100%
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.8) 100%
     ),
-    url("https://assets.nflxext.com/ffe/siteui/vlv3/00103100-5b45-4d4f-af32-342649f1bda5/d92b272e-452f-4478-be00-c1cf7d6ea8d1/IT-it-20230821-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    url(https://assets.nflxext.com/ffe/siteui/vlv3/00103100-5b45-4d4f-af32-342649f1bda5/d92b272e-452f-4478-be00-c1cf7d6ea8d1/IT-it-20230821-popsignuptwoweeks-perspective_alpha_website_large.jpg);
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 130%;
+  background-position: center;
+  background-size: 125%;
+  transform: scale(1) translateY(-21%);
+  background-attachment: fixed;
+  z-index: -1;
+  position: absolute;
+  opacity: 80%;
+}
+
+.header-container {
   position: relative;
+  min-height: 55.5em;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
 }
 
 .header-container .navbar {
@@ -25,6 +47,7 @@
 
 .header-container .navbar .logo-left a img {
   width: 9.25rem;
+  filter: contrast(1.05) brightness(1.05);
 }
 
 /* <------- MENU RIGHT -------> */
@@ -86,10 +109,8 @@
   justify-content: center;
   align-items: center;
 
-  z-index: 10;
-  height: 86%;
-  padding: 185px;
-  padding-top: 185px;
+  z-index: 1;
+  padding-top: 12em;
 }
 
 .hero-container .top {
@@ -97,14 +118,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1vw;
-  /* margin-bottom: 49px; */
+  gap: 1.6rem;
+  text-align: center;
 }
 .hero-container .description {
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 1vw;
+  gap: 1rem;
 }
 
 .hero-container .description h1 {
@@ -119,16 +140,18 @@
   color: white;
 }
 
-.hero-container .description p:last-of-type {
+.hero-container .form-header p {
   font-size: 1.24rem;
   font-weight: 400;
   color: white;
+  padding-bottom: 0.725rem;
 }
 
 .hero-container .form-header {
   display: inline-flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  gap: 1rem;
 }
 
 .hero-container .form-header .sign-up {
@@ -140,14 +163,15 @@
 }
 
 .hero-container .form-header .sign-up input[type="email"] {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 19px;
+  padding-bottom: 19px;
   padding-left: 18px;
-  padding-right: 320px;
+  padding-right: 18px;
   border-radius: 5px;
   border: 1px solid grey;
   background-color: rgba(0, 0, 0, 0.35);
   color: white;
+  width: 33em;
 }
 
 input:-webkit-autofill,
@@ -200,7 +224,7 @@ input:-webkit-autofill:active {
   cursor: pointer;
   width: 100%;
   max-width: 132px;
-  height: 60px;
+  height: 57px;
   transition: 0.3s;
 }
 
@@ -226,9 +250,9 @@ input:-webkit-autofill:active {
   position: relative;
   z-index: 30;
   width: 94vw;
-  margin-top: -5rem;
+  margin-top: -16.5em;
 
-  padding: 26px;
+  padding: 22px;
   border-radius: 5px;
   color: white;
 
@@ -239,6 +263,7 @@ input:-webkit-autofill:active {
     #0e1b4f 79.44%,
     #000413 100%
   );
+  box-shadow: 0px -8px 25px rgba(0, 0, 0, 0.5);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -249,7 +274,7 @@ input:-webkit-autofill:active {
 
 .banner-container .banner .description {
   text-align: left;
-  padding-left: 52px;
+  padding-left: 32px;
 }
 
 .banner-container .banner .description h3 {
@@ -266,8 +291,19 @@ input:-webkit-autofill:active {
   line-height: 24px;
 }
 
-.banner-container .banner .description a {
+.banner-container .banner .description .more {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-container .banner .description .more a {
   font-weight: bolder;
-  color: #4c72e2;
+  color: #448ef4;
   font-size: 16px;
+}
+
+.banner-container .banner .description .more svg {
+  color: #448ef4;
+  margin-left: 0.5rem;
 }

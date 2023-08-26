@@ -46,6 +46,7 @@
   display: flex;
   justify-content: space-between;
   font-weight: 400;
+  align-items: center;
 }
 
 .faq-wrapper .faq .collapsible-container .collapsible-label:hover,
@@ -122,14 +123,15 @@
 }
 
 .faq-wrapper .faq .email .email_and_button input[type="email"] {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 19px;
+  padding-bottom: 19px;
   padding-left: 18px;
-  padding-right: 320px;
+  padding-right: 18px;
   border-radius: 5px;
   border: 1px solid grey;
   background-color: rgba(0, 0, 0, 0.35);
   color: white;
+  width: 33em;
 }
 
 .faq-wrapper .faq .email .email_and_button input::placeholder {
@@ -184,7 +186,7 @@
   cursor: pointer;
   width: 100%;
   max-width: 132px;
-  height: 60px;
+  height: 57px;
   transition: 0.3s;
 }
 

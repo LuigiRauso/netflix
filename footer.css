@@ -8,7 +8,7 @@
 }
 
 .options {
-  min-width: 600px;
+  /* min-width: 600px; */
   max-width: calc(100% - 4rem);
   background-color: transparent;
   color: rgba(255, 255, 255, 0.7);

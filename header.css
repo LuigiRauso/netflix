@@ -294,8 +294,6 @@ input:-webkit-autofill:active {
 
 .banner-container .banner .description .more {
   display: inline-flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .banner-container .banner .description .more a {

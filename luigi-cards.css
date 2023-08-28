@@ -1,95 +1,38 @@
-@font-face {
-  font-family: "Netflix Sans";
-  font-weight: 100;
-  font-display: optional;
-  src:
-    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2)
-      format("woff2"),
-    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff)
-      format("woff");
-}
-
-@font-face {
-  font-family: "Netflix Sans";
-  font-weight: 300;
-  font-display: optional;
-  src:
-    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2)
-      format("woff2"),
-    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff)
-      format("woff");
-}
-
-@font-face {
-  font-family: "Netflix Sans";
-  font-weight: 400;
-  font-display: optional;
-  src:
-    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2)
-      format("woff2"),
-    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff)
-      format("woff");
-}
-
-@font-face {
-  font-family: "Netflix Sans";
-  font-weight: 700;
-  font-display: optional;
-  src:
-    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2)
-      format("woff2"),
-    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff)
-      format("woff");
-}
-
-@font-face {
-  font-family: "Netflix Sans";
-  font-weight: 800;
-  font-display: optional;
-  src:
-    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2)
-      format("woff2"),
-    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff)
-      format("woff");
-}
-
-@font-face {
-  font-family: "Netflix Sans";
-  font-weight: 900;
-  font-display: optional;
-  src:
-    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2)
-      format("woff2"),
-    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff)
-      format("woff");
-}
-
 .cards-wrapper section h2,
 .cards-wrapper section p {
   color: white;
-  font-family: Netflix Sans;
 }
 
 .cards-wrapper {
   background-color: black;
   margin: 0;
   padding: 0;
+  position: relative;
+}
+
+.cards-wrapper section:first-of-type {
+  padding-top: 0;
 }
 
 .cards-wrapper section {
   display: flex;
-  padding-top: 72px;
-  padding-bottom: 72px;
-  border-bottom: 8px solid #232323;
+  padding: 4.5rem 0;
+  /* border-bottom: 8px solid #232323; */
   align-items: center;
   justify-content: center;
+  min-height: auto;
+
+  max-width: calc(66.66666666666666% - 6rem);
+  margin: auto;
+  width: 100%;
 }
 
 .cards-wrapper section div.text {
   text-align: left;
   padding-left: 6px;
   padding-right: 6px;
-  max-width: 793.66px;
+  max-width: 50em;
+  flex: 1;
 }
 
 .cards-wrapper section div.text h2 {
@@ -105,11 +48,13 @@
 
 .cards-wrapper section .media {
   position: relative;
+  max-width: 50em;
+  flex: 1;
 }
 
 /* <-------- SECTION 1 --------> */
 .cards-wrapper section .media.s1 img {
-  width: 793.656px;
+  width: 100%;
   position: relative;
   z-index: 1;
   padding-left: 6px;
@@ -117,14 +62,20 @@
 }
 
 .cards-wrapper section .media.s1 video {
-  width: 582px;
+  width: 60%;
   position: absolute;
-  top: 124px;
-  left: 105px;
+
+  width: 100%;
+  height: 100%;
+  max-width: 72%;
+  top: 47.8%;
+  left: 49.5%;
+
+  transform: translate(-50%, -50%);
 }
 /* <-------- SECTION 2 --------> */
 .cards-wrapper section .media.s2 img {
-  width: 793.656px;
+  width: 100%;
   position: relative;
   z-index: 1;
   padding-left: 6px;
@@ -132,21 +83,34 @@
 }
 
 .cards-wrapper section .media.s2 video {
-  width: 491px;
+  width: 60%;
   position: absolute;
-  top: 64px;
-  left: 150px;
+
+  width: 100%;
+  height: 100%;
+  max-width: 60.5%;
+  top: 33.4%;
+  left: 49.5%;
+
+  transform: translate(-50%, -50%);
 }
 
+/* ROW REVERSE */
+.cards-wrapper section:last-of-type div.text {
+  order: 2;
+}
+
+/* OLD CODE - AVOID  */
+
 /* <-------- SECTION 3 --------> */
-.cards-wrapper section .media.s3 img {
+/* .cards-wrapper section .media.s3 img {
   width: 793.656px;
   padding-left: 6px;
   padding-right: 6px;
-}
+} */
 
 /* <-------- SECTION 4 --------> */
-.cards-wrapper section .media.s4 img {
+/* .cards-wrapper section .media.s4 img {
   width: 759.56px;
   padding-left: 6px;
   padding-right: 6px;
@@ -170,10 +134,10 @@
   height: 80px;
   padding-right: 12px;
   padding-left: 0;
-}
+} */
 
 /* TEXT */
-.cards-wrapper section .media.s4 .container .text {
+/* .cards-wrapper section .media.s4 .container .text {
   text-align: left;
   margin: 0;
   padding: 0;
@@ -197,10 +161,10 @@
   padding: 0;
   width: 258.64px;
   height: 18px;
-}
+} */
 
 /* DOWNLOAD ICON */
-.cards-wrapper section .media.s4 .container .download-ico {
+/* .cards-wrapper section .media.s4 .container .download-ico {
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -211,9 +175,4 @@
   padding: 0;
   width: 48px;
   height: 48px;
-}
-
-/* ROW REVERSE */
-.cards-wrapper section:nth-child(even) {
-  flex-direction: row-reverse;
-}
+} */

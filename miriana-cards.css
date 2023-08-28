@@ -1,0 +1,119 @@
+.cards-wrapper2 {
+  background-color: black;
+}
+
+.cards-wrapper2 section {
+  display: flex;
+  padding: 4.5rem 0;
+  /* border-bottom: 8px solid #232323; */
+  align-items: center;
+  justify-content: center;
+  max-width: calc(66.66666666666666% - 6rem);
+  margin: auto;
+  width: 100em;
+}
+
+.cards-wrapper2 section div.testo {
+  text-align: left;
+  padding-left: 6px;
+  padding-right: 6px;
+  max-width: 50em;
+  flex: 1;
+}
+.cards-wrapper2 section div.testo h2 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.cards-wrapper2 section div.testo p {
+  margin-top: 16px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.kids {
+  max-width: 50em;
+  flex: 1;
+}
+
+.kids img {
+  width: 100%;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+/*card bottom */
+.card2 {
+  position: relative;
+  max-width: 50em;
+  flex: 1;
+}
+.card2 img {
+  width: 100%;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.card2 .card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+
+  border: 2px solid rgba(128, 128, 128, 0.7);
+  border-radius: 0.75rem;
+  box-shadow: 0 0 2em 0 rgb(0, 0, 0);
+
+  position: absolute;
+
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 8%;
+  margin: 0 auto;
+
+  padding: 0.5rem 0.75rem;
+
+  min-width: 17.5rem;
+  width: 53%;
+}
+
+.card2 .card-bottom img {
+  height: 5rem;
+  width: unset;
+  padding-right: 12px;
+  padding-left: 0;
+}
+
+.card2 .card-bottom .testo2 {
+  text-align: left;
+  display: block;
+  margin-right: auto;
+}
+
+.testo h2,
+.testo p,
+.testo2 {
+  color: white;
+}
+
+.card2 .card-bottom .testo2 .title {
+  font-family: Netflix Sans;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 20px;
+}
+
+.card2 .card-bottom .testo2 .middle {
+  color: #0071eb;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.card2 .card-bottom .gif img {
+  margin: 0;
+  padding: 0;
+  width: 48px;
+  height: 48px;
+}
+
+.cards-wrapper2 section:last-of-type div.testo {
+  order: 2;
+}

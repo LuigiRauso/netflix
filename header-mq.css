@@ -1,0 +1,182 @@
+/* <--- SCREEN SIZE - TABLET ---> */
+@media only screen and (max-width: 820px) {
+  /* <------ HEADER ------> */
+
+  /* header container */
+  .header-container::before {
+    top: 28%;
+    transform: scale(1) translateY(-59%);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .header-container {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .header-container .navbar {
+    max-width: calc(100% - 4rem);
+    height: 5.1rem;
+  }
+
+  .header-container .navbar .logo-left a img {
+    width: 5.5rem;
+  }
+
+  .header-container .navbar .menu-right .custom-select {
+    margin: 0 auto;
+    margin-right: 0.5rem;
+  }
+
+  /* hero container */
+  .hero-container {
+    /* padding-top: 6.8em; */
+    padding-top: 13.5%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .hero-container .top {
+    line-height: 1.6875rem;
+  }
+
+  .hero-container .description {
+    gap: 1.2rem;
+  }
+
+  .hero-container .description h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.6875rem;
+  }
+
+  .hero-container .description p,
+  .hero-container .form-header p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.6875rem;
+  }
+
+  .hero-container .form-header .sign-up input[type="email"] {
+    max-width: 33em;
+    width: 100%;
+  }
+
+  /* banner container */
+  .banner-container {
+    margin-top: -23.6em;
+    width: 82.2%;
+  }
+
+  .banner-container .banner .description h3 {
+    font-weight: 600;
+  }
+}
+
+/* <--- SCREEN SIZE - SMARTPHONE ---> */
+@media only screen and (max-width: 360px) {
+  /* <------ HEADER ------> */
+
+  /* header container */
+  .header-container::before {
+    top: 35.5%;
+    transform: scale(1) translateY(-56%);
+    background-position: left;
+    background-size: cover;
+  }
+
+  .header-container .navbar {
+    max-width: calc(100% - 3rem);
+  }
+
+  .header-container .navbar .custom-select {
+    padding: 7px 10px;
+  }
+
+  .menu-right .custom-select select {
+    display: none;
+  }
+
+  .header-container {
+    overflow: hidden;
+  }
+
+  /* hero container */
+  .hero-container {
+    align-items: inherit;
+    /* padding-top: 2.4rem; */
+    padding-top: 11%;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    object-fit: contain;
+  }
+
+  .hero-container .description {
+    gap: 1.1rem;
+  }
+
+  .hero-container .description h1 {
+    line-height: 2.5rem;
+  }
+
+  .hero-container .description p {
+    line-height: 1.4rem;
+  }
+  .hero-container .form-header {
+    align-items: inherit;
+  }
+
+  .hero-container .form-header .sign-up {
+    flex-direction: column;
+    height: 5.5rem;
+    gap: 1rem;
+  }
+
+  .hero-container .form-header .sign-up input[type="email"] {
+    max-width: 16.5rem;
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  .hero-container .form-header .sign-up button {
+    font-size: 18px;
+    width: 33%;
+    height: 55%;
+  }
+
+  /* banner container */
+  .banner-container {
+    margin-top: -19rem;
+    width: 87%;
+
+    background: radial-gradient(
+      120.35% 220% at 49.86% -6.29%,
+      #e50914 0%,
+      #0e1b4f 46.15%,
+      #0d1121 100%
+    );
+    padding: 25px;
+    padding-bottom: 30px;
+  }
+  .banner-container .banner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner-container .banner svg {
+    margin-top: -4.65rem;
+    margin-left: -0.85rem;
+    transform: scale(0.8);
+  }
+
+  .banner-container .banner .description {
+    padding-left: 6px;
+  }
+
+  .banner-container .banner .description .more svg {
+    margin-top: 0;
+    transform: scale(1.05);
+  }
+}

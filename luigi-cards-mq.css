@@ -1,0 +1,48 @@
+/* <--- SCREEN SIZE - TABLET ---> */
+@media only screen and (max-width: 820px) {
+  /* <------ LUIGI CARDS ------> */
+  .cards-wrapper section:first-of-type {
+    padding: 4.5rem 0;
+  }
+
+  .cards-wrapper section {
+    max-width: calc(100% - 4rem);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cards-wrapper section div.text {
+    text-align: center;
+    padding-bottom: 1.2rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .cards-wrapper section:last-of-type div.text {
+    order: initial;
+  }
+
+  .cards-wrapper section div.text h2 {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+  .cards-wrapper section div.text p {
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+}
+
+/* <--- SCREEN SIZE - SMARTPHONE ---> */
+@media only screen and (max-width: 360px) {
+  /* <------ LUIGI CARDS ------> */
+
+  .cards-wrapper section:first-of-type {
+    padding: 3.5rem 0;
+  }
+
+  .cards-wrapper section {
+    padding: 3.5rem 0;
+    max-width: calc(100% - 3rem);
+  }
+}

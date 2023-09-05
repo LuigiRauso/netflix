@@ -6,18 +6,15 @@
   bottom: 0;
   left: 0;
 
-  background-image: linear-gradient(
-      to top,
+  background-image: linear-gradient(to top,
       rgba(0, 0, 0, 0.8) 0,
       rgba(0, 0, 0, 0) 60%,
-      rgba(0, 0, 0, 0.8) 100%
-    ),
+      rgba(0, 0, 0, 0.8) 100%),
     url(https://assets.nflxext.com/ffe/siteui/vlv3/00103100-5b45-4d4f-af32-342649f1bda5/d92b272e-452f-4478-be00-c1cf7d6ea8d1/IT-it-20230821-popsignuptwoweeks-perspective_alpha_website_large.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   transform: scale(1.25) translateY(-31.5%);
-  /* background-attachment: fixed; */
   z-index: -1;
   position: absolute;
   opacity: 80%;
@@ -26,12 +23,10 @@
 .header-container {
   position: relative;
   min-height: 55.5em;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.8) 0,
-    rgba(0, 0, 0, 0) 60%,
-    rgba(0, 0, 0, 0.8) 100%
-  );
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.8) 100%);
   overflow: hidden;
 }
 
@@ -122,6 +117,7 @@
   gap: 1.6rem;
   text-align: center;
 }
+
 .hero-container .description {
   display: flex;
   flex-direction: column;
@@ -202,11 +198,7 @@ input:-webkit-autofill:active {
   border: 2px solid #e50914;
 }
 
-.hero-container
-  .form-header
-  .sign-up
-  input[type="email"]:empty
-  ~ .email_message_wrong {
+.hero-container .form-header .sign-up input[type="email"]:empty~.email_message_wrong {
   display: none;
 }
 
@@ -235,6 +227,7 @@ input:-webkit-autofill:active {
   transition: 0.3s;
   background: rgb(193, 17, 25);
 }
+
 .hero-container .form-header .sign-up .email_svg1 {
   display: flex;
   justify-content: center;
@@ -257,13 +250,11 @@ input:-webkit-autofill:active {
   border-radius: 5px;
   color: white;
 
-  background: radial-gradient(
-    51.39% 511.66% at 47.68% -217.91%,
-    #ff9900 0%,
-    #e50914 17.27%,
-    #0e1b4f 79.44%,
-    #000413 100%
-  );
+  background: radial-gradient(51.39% 511.66% at 47.68% -217.91%,
+      #ff9900 0%,
+      #e50914 17.27%,
+      #0e1b4f 79.44%,
+      #000413 100%);
   box-shadow: 0px -8px 25px rgba(0, 0, 0, 0.5);
   background-attachment: fixed;
   background-size: cover;

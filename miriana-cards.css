@@ -5,7 +5,6 @@
 .cards-wrapper2 section {
   display: flex;
   padding: 4.5rem 0;
-  /* border-bottom: 8px solid #232323; */
   align-items: center;
   justify-content: center;
   max-width: calc(66.66666666666666% - 6rem);
@@ -20,6 +19,7 @@
   max-width: 50em;
   flex: 1;
 }
+
 .cards-wrapper2 section div.testo h2 {
   font-size: 3rem;
   font-weight: 900;
@@ -30,6 +30,7 @@
   font-size: 1.5rem;
   font-weight: 400;
 }
+
 .kids {
   max-width: 50em;
   flex: 1;
@@ -47,11 +48,13 @@
   max-width: 50em;
   flex: 1;
 }
+
 .card2 img {
   width: 100%;
   padding-left: 6px;
   padding-right: 6px;
 }
+
 .card2 .card-bottom {
   display: flex;
   align-items: center;

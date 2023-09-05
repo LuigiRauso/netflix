@@ -4,7 +4,6 @@
   /* <------ HEADER ------> */
 
   /* header container */
-
   .header-container::before {
     top: 35.5%;
     transform: scale(1) translateY(-56%);
@@ -31,7 +30,6 @@
   /* hero container */
   .hero-container {
     align-items: inherit;
-    /* padding-top: 2.4rem; */
     padding-top: 11%;
     padding-left: 1.8rem;
     padding-right: 1.8rem;
@@ -49,6 +47,7 @@
   .hero-container .description p {
     line-height: 1.4rem;
   }
+
   .hero-container .form-header {
     align-items: inherit;
   }
@@ -77,15 +76,14 @@
     margin-top: -19rem;
     width: 87%;
 
-    background: radial-gradient(
-      120.35% 220% at 49.86% -6.29%,
-      #e50914 0%,
-      #0e1b4f 46.15%,
-      #0d1121 100%
-    );
+    background: radial-gradient(120.35% 220% at 49.86% -6.29%,
+        #e50914 0%,
+        #0e1b4f 46.15%,
+        #0d1121 100%);
     padding: 25px;
     padding-bottom: 30px;
   }
+
   .banner-container .banner {
     display: flex;
     flex-direction: column;
@@ -155,7 +153,7 @@
     max-width: calc(100% - 3rem);
   }
 
-  .faq-wrapper .faq .collapsible-container .content > p {
+  .faq-wrapper .faq .collapsible-container .content>p {
     font-size: 1.125rem;
     font-weight: 400;
   }
@@ -192,11 +190,6 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-
     gap: 13px;
   }
-
-  /* .custom-select .choselanguage {
-    display: initial;
-  } */
 }

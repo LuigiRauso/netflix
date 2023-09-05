@@ -6,7 +6,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border-bottom: 8px solid #232323; */
   padding: 4.5rem 0;
 }
 
@@ -55,7 +54,7 @@
   transition-duration: 300ms;
 }
 
-.collapsible-input:checked + .collapsible-label:after {
+.collapsible-input:checked+.collapsible-label:after {
   content: "";
   display: block;
   width: 2.25rem;
@@ -74,17 +73,15 @@
   background-size: contain;
 }
 
-.faq-wrapper .faq .collapsible-container .content > p {
+.faq-wrapper .faq .collapsible-container .content>p {
   font-size: 1.5rem;
 }
 
 .faq-wrapper .faq .collapsible-container .content {
-  /* padding: 0 30px; */
   padding: 1.5rem;
   display: none;
   overflow: hidden;
   background-color: rgb(45, 45, 45);
-  /* font-size: 26px; */
   font-weight: 500;
   margin-top: -5px;
   margin-left: 6px;
@@ -92,7 +89,7 @@
   margin-bottom: 5px;
 }
 
-.collapsible-input:checked + .collapsible-label + .content {
+.collapsible-input:checked+.collapsible-label+.content {
   display: block;
 }
 
@@ -102,10 +99,9 @@
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;
-  /* margin-bottom: 40px; */
 }
 
-.faq-wrapper .faq .email > label {
+.faq-wrapper .faq .email>label {
   margin: 30px 0;
 }
 
@@ -153,23 +149,9 @@
   border: 2px solid #e50914;
 }
 
-.faq-wrapper
-  .faq
-  .email
-  .email_and_button
-  input[type="email"]:empty
-  ~ .email_message_wrong {
+.faq-wrapper .faq .email .email_and_button input[type="email"]:empty~.email_message_wrong {
   display: none;
 }
-
-/*input[type="email"] :invalid .email_message_wrong{
-    display:block;
-  
-  }*/
-
-/*.email_message_wrong{
-    display:none;
-  }*/
 
 .faq-wrapper .faq .email .email_and_button .email_button {
   background-color: #e50914;

@@ -1,0 +1,100 @@
+.cards-wrapper section h2,
+.cards-wrapper section p {
+  color: white;
+}
+
+.cards-wrapper {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.cards-wrapper section:first-of-type {
+  padding-top: 0;
+}
+
+.cards-wrapper section {
+  display: flex;
+  padding: 4.5rem 0;
+  align-items: center;
+  justify-content: center;
+  min-height: auto;
+  max-width: calc(66.66666666666666% - 6rem);
+  margin: auto;
+  width: 100%;
+}
+
+.cards-wrapper section div.text {
+  text-align: left;
+  padding-left: 6px;
+  padding-right: 6px;
+  max-width: 50em;
+  flex: 1;
+}
+
+.cards-wrapper section div.text h2 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.cards-wrapper section div.text p {
+  margin-top: 16px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.cards-wrapper section .media {
+  position: relative;
+  max-width: 50em;
+  flex: 1;
+}
+
+/* <-------- SECTION 1 --------> */
+.cards-wrapper section .media.s1 img {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.cards-wrapper section .media.s1 video {
+  width: 60%;
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  max-width: 72%;
+  top: 47.8%;
+  left: 49.5%;
+
+  transform: translate(-50%, -50%);
+}
+
+/* <-------- SECTION 2 --------> */
+.cards-wrapper section .media.s2 img {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.cards-wrapper section .media.s2 video {
+  width: 60%;
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  max-width: 60.5%;
+  top: 33.4%;
+  left: 49.5%;
+
+  transform: translate(-50%, -50%);
+}
+
+/* ROW REVERSE */
+.cards-wrapper section:last-of-type div.text {
+  order: 2;
+}

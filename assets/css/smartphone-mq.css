@@ -1,0 +1,195 @@
+/* <--- SCREEN SIZE - SMARTPHONE ---> */
+
+@media only screen and (max-width: 360px) {
+  /* <------ HEADER ------> */
+
+  /* header container */
+  .header-container::before {
+    top: 35.5%;
+    transform: scale(1) translateY(-56%);
+    background-position: left;
+    background-size: cover;
+  }
+
+  .header-container .navbar {
+    max-width: calc(100% - 3rem);
+  }
+
+  .header-container .navbar .custom-select {
+    padding: 7px 10px;
+  }
+
+  .menu-right .custom-select select {
+    display: none;
+  }
+
+  .header-container {
+    overflow: hidden;
+  }
+
+  /* hero container */
+  .hero-container {
+    align-items: inherit;
+    padding-top: 11%;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    object-fit: contain;
+  }
+
+  .hero-container .description {
+    gap: 1.1rem;
+  }
+
+  .hero-container .description h1 {
+    line-height: 2.5rem;
+  }
+
+  .hero-container .description p {
+    line-height: 1.4rem;
+  }
+
+  .hero-container .form-header {
+    align-items: inherit;
+  }
+
+  .hero-container .form-header .sign-up {
+    flex-direction: column;
+    height: 5.5rem;
+    gap: 1rem;
+  }
+
+  .hero-container .form-header .sign-up input[type="email"] {
+    max-width: 16.5rem;
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  .hero-container .form-header .sign-up button {
+    font-size: 18px;
+    width: 33%;
+    height: 55%;
+  }
+
+  /* banner container */
+  .banner-container {
+    margin-top: -19rem;
+    width: 87%;
+
+    background: radial-gradient(120.35% 220% at 49.86% -6.29%,
+        #e50914 0%,
+        #0e1b4f 46.15%,
+        #0d1121 100%);
+    padding: 25px;
+    padding-bottom: 30px;
+  }
+
+  .banner-container .banner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner-container .banner svg {
+    margin-top: -4.65rem;
+    margin-left: -0.85rem;
+    transform: scale(0.8);
+  }
+
+  .banner-container .banner .description {
+    padding-left: 6px;
+  }
+
+  .banner-container .banner .description .more svg {
+    margin-top: 0;
+    transform: scale(1.05);
+  }
+
+  /* <------ LUIGI CARDS ------> */
+
+  .cards-wrapper section:first-of-type {
+    padding: 3.5rem 0;
+  }
+
+  .cards-wrapper section {
+    padding: 3.5rem 0;
+    max-width: calc(100% - 3rem);
+  }
+
+  /* <------ MIRIANA CARDS ------> */
+
+  .cards-wrapper2 section {
+    padding: 3.5rem 0;
+    max-width: calc(100% - 3rem);
+  }
+
+  .card2 .card-bottom .testo2 .title {
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+
+  .card2 .card-bottom .testo2 .middle {
+    font-size: 0.75rem;
+    font-weight: 400;
+  }
+
+  .card2 .card-bottom {
+    min-width: 15rem;
+    width: 85%;
+    padding: 0.25rem 0.65rem;
+  }
+
+  .card2 .card-bottom img {
+    height: 3rem;
+    padding-right: 16px;
+  }
+
+  /* <------ MONICA FAQ ------> */
+
+  .faq-wrapper {
+    padding: 3.5rem 0;
+  }
+
+  .faq-wrapper .faq {
+    max-width: calc(100% - 3rem);
+  }
+
+  .faq-wrapper .faq .collapsible-container .content>p {
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+
+  .faq-wrapper .faq .email {
+    align-items: inherit;
+  }
+
+  .faq-wrapper .faq .email .email_and_button {
+    flex-direction: column;
+    height: 5.5rem;
+    gap: 1rem;
+  }
+
+  .faq-wrapper .faq .email .email_and_button input[type="email"] {
+    max-width: 16.5rem;
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  .faq-wrapper .faq .email .email_and_button .email_button {
+    font-size: 18px;
+    width: 33%;
+    height: 55%;
+  }
+
+  /* <------ ELEONORA FOOTER ------> */
+  .f-container {
+    max-width: calc(100% - 3rem);
+  }
+
+  .links-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 13px;
+  }
+}

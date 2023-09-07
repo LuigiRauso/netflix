@@ -1,0 +1,299 @@
+.header-container::before {
+  /* fix opacity */
+  content: "";
+  top: 21.2%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-image: linear-gradient(to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.8) 100%),
+    url(https://assets.nflxext.com/ffe/siteui/vlv3/00103100-5b45-4d4f-af32-342649f1bda5/d92b272e-452f-4478-be00-c1cf7d6ea8d1/IT-it-20230821-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transform: scale(1.25) translateY(-31.5%);
+  z-index: -1;
+  position: absolute;
+  opacity: 80%;
+}
+
+.header-container {
+  position: relative;
+  min-height: 55.5em;
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.8) 100%);
+  overflow: hidden;
+}
+
+.header-container .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 5.375rem;
+  max-width: calc(66.66666666666666% - 6rem);
+  margin: auto;
+}
+
+.header-container .navbar .logo-left a img {
+  width: 9.25rem;
+  filter: contrast(1.05) brightness(1.05);
+}
+
+/* <------- MENU RIGHT -------> */
+.header-container .navbar .menu-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container .navbar .menu-right .login a {
+  display: inline-flex;
+  background-color: #e50914;
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 16px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.header-container .navbar .menu-right .login a:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  background: rgb(193, 17, 25);
+}
+
+.header-container .navbar .menu-right .language-container {
+  appearance: none;
+  display: inline-flex;
+  min-width: auto;
+  width: auto;
+  font-size: 1rem;
+  font-weight: 400;
+  align-items: center;
+  border: 1px solid rgba(118, 118, 118);
+  border-radius: 4px;
+  background-color: #131313;
+  color: inherit;
+  justify-content: center;
+  gap: 10px;
+  padding: 6px 15px;
+
+  margin-right: 25px;
+}
+
+.header-container .navbar .menu-right .custom-select {
+  margin-bottom: 0px;
+  margin-right: 1.5rem;
+}
+
+/* <------- HERO CONTAINER -------> */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1;
+  padding-top: 12em;
+}
+
+.hero-container .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+  text-align: center;
+}
+
+.hero-container .description {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}
+
+.hero-container .description h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: white;
+}
+
+.hero-container .description p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: white;
+}
+
+.hero-container .form-header p {
+  font-size: 1.24rem;
+  font-weight: 400;
+  color: white;
+  padding-bottom: 0.725rem;
+}
+
+.hero-container .form-header {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hero-container .form-header .sign-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+}
+
+.hero-container .form-header .sign-up input[type="email"] {
+  padding-top: 19px;
+  padding-bottom: 19px;
+  padding-left: 18px;
+  padding-right: 18px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  background-color: rgb(19 19 19 / 78%);
+  color: white;
+  width: 33em;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #ffffff;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.hero-container .form-header .sign-up input::placeholder {
+  color: rgba(255, 255, 255, 0.722);
+  font-size: 1rem;
+}
+
+.hero-container .form-header .sign-up input[type="email"]:focus {
+  border: 3px solid white;
+}
+
+.hero-container .form-header .sign-up input[type="email"]:valid,
+.hero-container .form-header .sign-up input[type="email"]:focus {
+  border: 2px solid green;
+}
+
+.hero-container .form-header .sign-up input[type="email"] :invalid {
+  border: 2px solid #e50914;
+}
+
+.hero-container .form-header .sign-up input[type="email"]:empty~.email_message_wrong {
+  display: none;
+}
+
+.hero-container .form-header .sign-up button {
+  background-color: #e50914;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 24px;
+  margin-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  max-width: 132px;
+  height: 57px;
+  transition: 0.3s;
+}
+
+.hero-container .form-header .sign-up button:hover,
+.hero-container .form-header .sign-up button:active {
+  cursor: pointer;
+  transition: 0.3s;
+  background: rgb(193, 17, 25);
+}
+
+.hero-container .form-header .sign-up .email_svg1 {
+  display: flex;
+  justify-content: center;
+}
+
+/* BANNER */
+.banner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-50%);
+  left: 50%;
+
+  position: relative;
+  z-index: 30;
+  width: 94.2%;
+  margin-top: -16.2em;
+
+  padding: 22px;
+  border-radius: 5px;
+  color: white;
+
+  background: radial-gradient(51.39% 511.66% at 47.68% -217.91%,
+      #ff9900 0%,
+      #e50914 17.27%,
+      #0e1b4f 79.44%,
+      #000413 100%);
+  box-shadow: 0px -8px 25px rgba(0, 0, 0, 0.5);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.banner-container .banner {
+  display: flex;
+}
+
+.banner-container .banner .description {
+  text-align: left;
+  padding-left: 32px;
+}
+
+.banner-container .banner .description h3 {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.banner-container .banner .description p {
+  font-size: 16px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  line-height: 24px;
+}
+
+.banner-container .banner .description .more {
+  display: inline-flex;
+}
+
+.banner-container .banner .description .more a {
+  font-weight: bolder;
+  color: #448ef4;
+  font-size: 16px;
+}
+
+.banner-container .banner .description .more svg {
+  color: #448ef4;
+  margin-left: 0.5rem;
+}
